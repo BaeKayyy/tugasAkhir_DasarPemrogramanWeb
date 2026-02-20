@@ -166,3 +166,107 @@ hr {
   color: #7a4b2a;
 }
 
+/* bagian Kontak */
+#kontak {
+  margin-top: 16px;
+}
+
+.contact-link {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.contact-link a {
+  color: #5c3d2e;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-link a:hover {
+  text-decoration: underline;
+}
+
+/* bagian Aside */
+.sidebar {
+  background-color: #ffffff;
+  padding: 16px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  position: sticky;
+  top: 16px;
+}
+
+.aside-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.sidebar h3 {
+  color: #5c3d2e;
+  margin-bottom: 6px;
+}
+
+.aside-info {
+  list-style: none;
+  margin-top: 8px;
+}
+
+.aside-info li {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+/* bagian Footer */
+footer {
+  background-color: #5c3d2e;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 16px;
+  margin-top: 24px;
+}
+
+/* Responsif Ukuran */
+@media screen and (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .layout main,
+  .layout .sidebar {
+    width: 100%;
+  }
+
+  .home {
+    flex-direction: column;
+  }
+
+  .home-text,
+  .home-image {
+    width: 100%;
+  }
+
+  .card-menu {
+    width: calc(50% - 8px);
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card-menu {
+    width: 100%;
+  }
+
+  .image,
+  .home-image {
+    height: 180px;
+  }
+}
